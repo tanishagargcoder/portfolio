@@ -173,6 +173,7 @@ h2::after {
 }
 
 .about-text { color: var(--muted); font-size: 1.08rem; max-width: 720px; }
+.about-text strong { color: var(--text); font-weight: 600; }
 
 /* ---------- project grid ---------- */
 .grid {

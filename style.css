@@ -237,6 +237,75 @@ h2::after {
 }
 .links a:hover { text-decoration: underline; }
 
+/* ---------- experience timeline ---------- */
+.timeline {
+  position: relative;
+  padding-left: 28px;
+  max-width: 780px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  opacity: 0.35;
+}
+.titem {
+  position: relative;
+  padding-bottom: 30px;
+}
+.titem:last-child { padding-bottom: 0; }
+.titem::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+}
+.titem-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.titem h3 { font-size: 1.12rem; }
+.tdate {
+  color: var(--accent-2);
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.torg { color: var(--muted); font-size: 0.92rem; margin-top: 2px; }
+.tdesc { color: var(--muted); font-size: 0.88rem; margin-top: 6px; max-width: 620px; }
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 36px;
+}
+.highlights span {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.82rem;
+  padding: 7px 14px;
+  border-radius: 999px;
+}
+.highlights span:first-child,
+.highlights span:nth-child(2) {
+  border-color: rgba(139, 92, 246, 0.4);
+  color: #c4b5fd;
+}
+
 /* ---------- skills ---------- */
 .skills { display: flex; flex-wrap: wrap; gap: 12px; }
 .skills span {

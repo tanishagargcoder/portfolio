@@ -468,8 +468,9 @@ section { padding: 96px 0; }
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
+.titem-head h3 { flex: 1; }
 .titem h3 { font-size: 1.05rem; font-weight: 700; }
 .tdate { color: var(--lime); font-size: 0.78rem; font-weight: 600; white-space: nowrap; }
 .torg { color: var(--muted); font-size: 0.86rem; margin-top: 3px; }

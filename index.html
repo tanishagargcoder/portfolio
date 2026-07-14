@@ -3,247 +3,297 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tanisha Garg — Portfolio</title>
-  <meta name="description" content="Tanisha Garg — Full-stack developer building AI-powered tools and web apps. Portfolio of projects including CloudPilot AI, TASA, Nirvaan and more." />
+  <title>Tanisha Garg — Full-stack Developer</title>
+  <meta name="description" content="Tanisha Garg — full-stack developer building AI-powered tools, DevOps dashboards and bots. CloudPilot AI, TASA, WhatsApp Chat Agent and more." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ambient glow -->
-  <div class="glow glow-1"></div>
-  <div class="glow glow-2"></div>
-
   <nav>
     <div class="nav-inner">
-      <a href="#top" class="logo">TG<span>.</span></a>
+      <a href="#top" class="logo">TG<span>©</span></a>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
       </div>
+      <a href="#contact" class="pill">Say hello ↗</a>
     </div>
   </nav>
 
+  <!-- ================= HERO ================= -->
   <header id="top">
-    <p class="kicker">Hi, I'm</p>
-    <h1>Tanisha <span class="grad">Garg</span></h1>
-    <p class="tagline">Full-stack developer who loves building <strong>AI-powered tools</strong> and clean, useful web apps.</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#projects">View Projects</a>
-      <a class="btn btn-ghost" href="https://github.com/tanishagargcoder" target="_blank" rel="noopener">GitHub ↗</a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="overline">// Full-stack developer · India</p>
+        <h1>Tanisha<br /><span class="outline">Garg</span></h1>
+        <p class="hero-sub">I build <span class="typed" id="typed">AI-powered tools</span><span class="caret"></span></p>
+        <p class="bio">
+          CS undergrad at Bennett University shipping real products — an AI DevOps copilot,
+          a productivity app and a WhatsApp bot that runs 24/7. I like taking ideas
+          from <em>zero to deployed</em>.
+        </p>
+        <div class="hero-cta">
+          <a class="btn-solid" href="#work">See my work</a>
+          <a class="btn-line" href="https://github.com/tanishagargcoder" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn-line" href="https://www.linkedin.com/in/tanisha-garg-a2b32b281/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="me.jpg" alt="Tanisha Garg" class="me-photo" onerror="this.parentElement.classList.add('no-photo'); this.remove();" />
+          <div class="photo-fallback" aria-hidden="true"><span>TG</span></div>
+        </div>
+        <div class="float-chip chip-1">🏆 Google Arcade Champion</div>
+        <div class="float-chip chip-2">GSSoC '25 · Campus Ambassador</div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div><strong>8+</strong><span>Projects shipped</span></div>
+      <div><strong>8</strong><span>Roles &amp; internships</span></div>
+      <div><strong>2</strong><span>Wins 🏆</span></div>
+      <div><strong>24/7</strong><span>Bot in production</span></div>
     </div>
   </header>
 
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>TypeScript ✦ Python ✦ React ✦ Next.js ✦ Node.js ✦ FastAPI ✦ MongoDB ✦ AWS ✦ WhatsApp Cloud API ✦ Ollama ✦ Groq ✦ Vercel ✦ Render ✦&nbsp;</span>
+      <span>TypeScript ✦ Python ✦ React ✦ Next.js ✦ Node.js ✦ FastAPI ✦ MongoDB ✦ AWS ✦ WhatsApp Cloud API ✦ Ollama ✦ Groq ✦ Vercel ✦ Render ✦&nbsp;</span>
+    </div>
+  </div>
+
   <main>
-    <section id="about" class="reveal">
-      <h2><span class="num">01</span> About Me</h2>
-      <p class="about-text">
-        I'm a Computer Science student at <strong>Bennett University (SCSET)</strong>, passionate about
-        turning ideas into working products — from AI DevOps dashboards to productivity apps and hackathon
-        builds. I enjoy working across the stack: React &amp; Next.js on the frontend, Node.js &amp; FastAPI
-        on the backend, and shipping to the cloud with Vercel, Render and AWS. I'm also a SheFi scholar,
-        exploring web3 and fintech. Many more exciting projects coming soon!
-      </p>
-    </section>
+    <!-- ================= FEATURED WORK ================= -->
+    <section id="work" class="reveal">
+      <div class="sec-head">
+        <h2>Selected <span class="outline">work</span></h2>
+        <p>Three products, all live.</p>
+      </div>
 
-    <section id="projects" class="reveal">
-      <h2><span class="num">02</span> Projects</h2>
-      <div class="grid">
-
-        <article class="card featured">
-          <div class="card-top">
-            <span class="badge">★ Featured</span>
-            <span class="lang">TypeScript · Python</span>
+      <article class="feature">
+        <a class="shot shot-cloudpilot" href="https://cloudpilot-ai-two.vercel.app" target="_blank" rel="noopener" aria-label="Open CloudPilot AI">
+          <div class="shot-bar"><i></i><i></i><i></i><em>cloudpilot-ai-two.vercel.app</em></div>
+          <div class="shot-body">
+            <div class="shot-word">CloudPilot<b>AI</b></div>
+            <div class="shot-caption">AI DevOps dashboard</div>
           </div>
+        </a>
+        <div class="feature-info">
+          <span class="idx">01</span>
           <h3>CloudPilot AI</h3>
-          <p>AI-powered DevOps dashboard with autonomous agents for cloud cost optimization, security scanning and live incident monitoring. Next.js frontend, FastAPI backend, real AWS scans with demo mode.</p>
-          <div class="tags"><span>Next.js</span><span>FastAPI</span><span>AWS</span><span>AI Agents</span></div>
-          <div class="links">
-            <a href="https://cloudpilot-ai-two.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+          <p>An AI-powered DevOps dashboard with autonomous agents for cloud cost optimization, security scanning and live incident monitoring — real AWS scans with a safe demo mode.</p>
+          <div class="chips"><span>Next.js</span><span>TypeScript</span><span>FastAPI</span><span>AWS</span><span>AI Agents</span></div>
+          <div class="feature-links">
+            <a href="https://cloudpilot-ai-two.vercel.app" target="_blank" rel="noopener">Live site ↗</a>
             <a href="https://github.com/tanishagargcoder/cloudpilot-ai" target="_blank" rel="noopener">Code ↗</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="card featured">
-          <div class="card-top">
-            <span class="badge">★ Featured</span>
-            <span class="lang">JavaScript</span>
+      <article class="feature flip">
+        <a class="shot shot-tasa" href="https://tasa-seven.vercel.app" target="_blank" rel="noopener" aria-label="Open TASA">
+          <div class="shot-bar"><i></i><i></i><i></i><em>tasa-seven.vercel.app</em></div>
+          <div class="shot-body">
+            <div class="shot-word">TASA</div>
+            <div class="shot-caption">Own your day</div>
           </div>
+        </a>
+        <div class="feature-info">
+          <span class="idx">02</span>
           <h3>TASA</h3>
-          <p>Full-stack MERN productivity app to organize tasks and stay on top of your day — React frontend on Vercel with a Node/Express + MongoDB backend on Render.</p>
-          <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
-          <div class="links">
-            <a href="https://tasa-seven.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+          <p>A full-stack MERN productivity app to organize tasks and stay on top of your day — React on Vercel, Node/Express + MongoDB API on Render.</p>
+          <div class="chips"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+          <div class="feature-links">
+            <a href="https://tasa-seven.vercel.app" target="_blank" rel="noopener">Live site ↗</a>
             <a href="https://github.com/tanishagargcoder/TASA" target="_blank" rel="noopener">Code ↗</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="card">
-          <div class="card-top"><span class="lang">AI · Mental Health</span></div>
-          <h3>Nirvaan AI Assistant</h3>
-          <p>An AI assistant for mental health support — built with a focus on empathetic, accessible conversations. #AIForGood</p>
-          <div class="tags"><span>AI</span><span>NLP</span><span>Tech for Impact</span></div>
-          <div class="links">
-            <a href="https://www.linkedin.com/posts/tanisha-garg-a2b32b281_mentalhealth-aiforgood-techforimpact-activity-7320476146242912257-twI-" target="_blank" rel="noopener">Showcase ↗</a>
+      <article class="feature">
+        <a class="shot shot-wa" href="https://github.com/tanishagargcoder/chat-agent" target="_blank" rel="noopener" aria-label="Open WhatsApp Chat Agent repo">
+          <div class="shot-bar"><i></i><i></i><i></i><em>WhatsApp Cloud API</em></div>
+          <div class="shot-body">
+            <div class="wa-bubble">Hey! 👋 I'm Tanisha's Property Assistant</div>
+            <div class="wa-bubble me">2BHK in Pune, 60L budget</div>
+            <div class="wa-bubble">✅ Noted! Ask me anything about real estate</div>
           </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top"><span class="lang">Showcase</span></div>
-          <h3>Shunya Se Anant Tak</h3>
-          <p>Project presented at the Bennett University SCSET project showcase — an idea taken from zero to infinity.</p>
-          <div class="tags"><span>Bennett University</span><span>Project Showcase</span></div>
-          <div class="links">
-            <a href="https://www.linkedin.com/posts/tanisha-garg-a2b32b281_projectshowcase24-bennettuniversity-scset-activity-7290731928125681664-C9zG" target="_blank" rel="noopener">Showcase ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top"><span class="lang">JavaScript</span></div>
-          <h3>Sakhii</h3>
-          <p>Built for She Builds — the All India Women Hackathon. A web platform created to empower and support women.</p>
-          <div class="tags"><span>Hackathon</span><span>Web App</span></div>
-          <div class="links">
-            <a href="https://www.linkedin.com/posts/tanisha-garg-a2b32b281_sleepless-nights-big-ideas-saakhi-magic-activity-7364008606914015233-6acS" target="_blank" rel="noopener">Showcase ↗</a>
-            <a href="https://github.com/tanishagargcoder/sakhii" target="_blank" rel="noopener">Code ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top"><span class="lang">JavaScript</span></div>
-          <h3>WhatsApp Chat Agent <span class="live-dot" title="Live on Render"></span></h3>
-          <p>AI real estate chatbot on the WhatsApp Cloud API, live 24/7 on Render — qualifies leads (city, property type, budget) with AI replies via locally-run Mistral (Ollama) or Groq in the cloud.</p>
-          <div class="tags"><span>WhatsApp Cloud API</span><span>Mistral · Ollama</span><span>Groq</span><span>Node.js</span><span>Render</span></div>
-          <div class="links">
+        </a>
+        <div class="feature-info">
+          <span class="idx">03</span>
+          <h3>WhatsApp Chat Agent <span class="live-dot" title="Live on Render"></span><span class="live-label">live</span></h3>
+          <p>An AI real-estate bot on the WhatsApp Cloud API, running 24/7 on Render. Qualifies leads through conversation, then answers anything — Mistral via Ollama locally, Groq in the cloud.</p>
+          <div class="chips"><span>Node.js</span><span>WhatsApp Cloud API</span><span>Mistral · Ollama</span><span>Groq</span><span>Render</span></div>
+          <div class="feature-links">
             <a href="https://www.linkedin.com/posts/tanisha-garg-a2b32b281_realestatetech-aichatbot-mistral-activity-7340805994240757760-sEkG" target="_blank" rel="noopener">Showcase ↗</a>
             <a href="https://github.com/tanishagargcoder/chat-agent" target="_blank" rel="noopener">Code ↗</a>
           </div>
-        </article>
+        </div>
+      </article>
+    </section>
 
-        <article class="card">
-          <div class="card-top"><span class="lang">Python</span></div>
-          <h3>JSON Telemetry Unifier</h3>
-          <p>A Python tool that normalizes telemetry data from different JSON formats into one unified schema for easier analysis.</p>
-          <div class="tags"><span>Python</span><span>Data Processing</span></div>
-          <div class="links">
-            <a href="https://github.com/tanishagargcoder/json-telemetry-unifier" target="_blank" rel="noopener">Code ↗</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top"><span class="lang">JavaScript</span></div>
-          <h3>HelloCon Forge App</h3>
-          <p>A Confluence macro built on Atlassian Forge — my first step into building apps for the Atlassian ecosystem.</p>
-          <div class="tags"><span>Atlassian Forge</span><span>Confluence</span></div>
-          <div class="links">
-            <a href="https://github.com/tanishagargcoder/hellocon-forge-app" target="_blank" rel="noopener">Code ↗</a>
-          </div>
-        </article>
-
+    <!-- ================= MORE PROJECTS ================= -->
+    <section id="more" class="reveal">
+      <div class="sec-head">
+        <h2>More <span class="outline">projects</span></h2>
+        <p>Hackathons, experiments &amp; showcases.</p>
+      </div>
+      <div class="mini-grid">
+        <a class="mini" href="https://www.linkedin.com/posts/tanisha-garg-a2b32b281_mentalhealth-aiforgood-techforimpact-activity-7320476146242912257-twI-" target="_blank" rel="noopener">
+          <span class="mini-idx">04</span>
+          <h4>Nirvaan AI Assistant</h4>
+          <p>AI assistant for mental-health support. #AIForGood</p>
+          <span class="mini-arrow">↗</span>
+        </a>
+        <a class="mini" href="https://www.linkedin.com/posts/tanisha-garg-a2b32b281_projectshowcase24-bennettuniversity-scset-activity-7290731928125681664-C9zG" target="_blank" rel="noopener">
+          <span class="mini-idx">05</span>
+          <h4>Shunya Se Anant Tak</h4>
+          <p>Winner — Bennett University SCSET project showcase '24. 🏆</p>
+          <span class="mini-arrow">↗</span>
+        </a>
+        <a class="mini" href="https://www.linkedin.com/posts/tanisha-garg-a2b32b281_sleepless-nights-big-ideas-saakhi-magic-activity-7364008606914015233-6acS" target="_blank" rel="noopener">
+          <span class="mini-idx">06</span>
+          <h4>Sakhii</h4>
+          <p>Built at She Builds — All India Women Hackathon.</p>
+          <span class="mini-arrow">↗</span>
+        </a>
+        <a class="mini" href="https://github.com/tanishagargcoder/json-telemetry-unifier" target="_blank" rel="noopener">
+          <span class="mini-idx">07</span>
+          <h4>JSON Telemetry Unifier</h4>
+          <p>Python tool normalizing telemetry into one schema.</p>
+          <span class="mini-arrow">↗</span>
+        </a>
+        <a class="mini" href="https://github.com/tanishagargcoder/hellocon-forge-app" target="_blank" rel="noopener">
+          <span class="mini-idx">08</span>
+          <h4>HelloCon Forge App</h4>
+          <p>Confluence macro on Atlassian Forge.</p>
+          <span class="mini-arrow">↗</span>
+        </a>
       </div>
     </section>
 
+    <!-- ================= EXPERIENCE ================= -->
     <section id="experience" class="reveal">
-      <h2><span class="num">03</span> Experience</h2>
-      <div class="timeline">
-
-        <div class="titem">
-          <div class="titem-head"><h3>Intern</h3><span class="tdate">Oct 2025 – Jan 2026</span></div>
-          <p class="torg">Infosys Springboard · Internship</p>
+      <div class="exp-grid">
+        <div class="exp-side">
+          <h2>Where I've <span class="outline">worked</span></h2>
+          <div class="highlights">
+            <span>🏆 Project Showcase Winner '24</span>
+            <span>🏆 Google Arcade Champion</span>
+            <span>SheFi Scholar</span>
+            <span>Open Source Connect</span>
+            <span>Girls Leading Tech</span>
+            <span>DevFest India 2024</span>
+          </div>
         </div>
-
-        <div class="titem">
-          <div class="titem-head"><h3>Campus Ambassador &amp; Contributor</h3><span class="tdate">Jun 2025 – Dec 2025</span></div>
-          <p class="torg">GirlScript Summer of Code (GSSoC '25)</p>
-          <p class="tdesc">Selected campus representative and open-source contributor in one of India's largest summer of code programs.</p>
+        <div class="timeline">
+          <div class="titem">
+            <div class="titem-head"><h3>Intern — Infosys Springboard</h3><span class="tdate">Oct 2025 – Jan 2026</span></div>
+            <p class="torg">Internship</p>
+          </div>
+          <div class="titem">
+            <div class="titem-head"><h3>Campus Ambassador &amp; Contributor — GSSoC '25</h3><span class="tdate">Jun 2025 – Dec 2025</span></div>
+            <p class="torg">GirlScript Summer of Code</p>
+          </div>
+          <div class="titem">
+            <div class="titem-head"><h3>Intern — Codimaths</h3><span class="tdate">Jun 2025 – Dec 2025</span></div>
+            <p class="torg">Internship · Remote</p>
+          </div>
+          <div class="titem">
+            <div class="titem-head"><h3>Freelance Developer — Uber AI Solutions</h3><span class="tdate">Jun 2025 – Jul 2025</span></div>
+            <p class="torg">Freelance</p>
+          </div>
+          <div class="titem">
+            <div class="titem-head"><h3>Summer Intern (Nasscom) — TheSmartBridge</h3><span class="tdate">Jun 2025 – Jul 2025</span></div>
+            <p class="torg">Internship</p>
+          </div>
+          <div class="titem">
+            <div class="titem-head"><h3>Google Cloud Arcade Facilitator Program</h3><span class="tdate">May 2025 – Jun 2025</span></div>
+            <p class="torg">Google Cloud · Champion winner 🏆</p>
+          </div>
+          <div class="titem">
+            <div class="titem-head"><h3>Cloud Engineer Intern — CODTECH IT Solutions</h3><span class="tdate">Aug 2024 – Sep 2024</span></div>
+            <p class="torg">Internship · New Delhi · Remote</p>
+          </div>
+          <div class="titem">
+            <div class="titem-head"><h3>Secretary General — Technotix BU</h3><span class="tdate">Jan 2024 – Dec 2025</span></div>
+            <p class="torg">Bennett University tech society — events, hackathons &amp; community</p>
+          </div>
         </div>
-
-        <div class="titem">
-          <div class="titem-head"><h3>Intern</h3><span class="tdate">Jun 2025 – Dec 2025</span></div>
-          <p class="torg">Codimaths · Internship · Remote</p>
-        </div>
-
-        <div class="titem">
-          <div class="titem-head"><h3>Freelance Developer</h3><span class="tdate">Jun 2025 – Jul 2025</span></div>
-          <p class="torg">Uber AI Solutions · Freelance</p>
-        </div>
-
-        <div class="titem">
-          <div class="titem-head"><h3>Summer Intern (Nasscom)</h3><span class="tdate">Jun 2025 – Jul 2025</span></div>
-          <p class="torg">TheSmartBridge</p>
-        </div>
-
-        <div class="titem">
-          <div class="titem-head"><h3>Google Cloud Arcade Facilitator Program</h3><span class="tdate">May 2025 – Jun 2025</span></div>
-          <p class="torg">Google Cloud · Remote</p>
-          <p class="tdesc">Completed the facilitator cohort — Google Arcade Champion winner. 🏆</p>
-        </div>
-
-        <div class="titem">
-          <div class="titem-head"><h3>Cloud Engineer Intern</h3><span class="tdate">Aug 2024 – Sep 2024</span></div>
-          <p class="torg">CODTECH IT Solutions · New Delhi · Remote</p>
-        </div>
-
-        <div class="titem">
-          <div class="titem-head"><h3>Secretary General</h3><span class="tdate">Jan 2024 – Dec 2025</span></div>
-          <p class="torg">Technotix BU · Bennett University</p>
-          <p class="tdesc">Leading the tech society — organizing events, hackathons and community initiatives on campus.</p>
-        </div>
-
-      </div>
-
-      <div class="highlights">
-        <span>🏆 Project Showcase Winner '24</span>
-        <span>🏆 Google Arcade Champion</span>
-        <span>SheFi Scholar (S14)</span>
-        <span>Contributor · Open Source Connect</span>
-        <span>Member · Girls Leading Tech</span>
-        <span>DevFest India 2024</span>
-        <span>GDG WoW NCR 2024</span>
       </div>
     </section>
 
+    <!-- ================= SKILLS ================= -->
     <section id="skills" class="reveal">
-      <h2><span class="num">04</span> Skills</h2>
-      <div class="skills">
-        <span>JavaScript</span><span>TypeScript</span><span>Python</span><span>C++</span>
-        <span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span>
-        <span>MongoDB</span><span>FastAPI</span><span>REST APIs</span>
-        <span>AWS</span><span>Vercel</span><span>Render</span><span>Git &amp; GitHub</span>
-        <span>AI / LLM Integration</span>
+      <div class="sec-head">
+        <h2>Tool<span class="outline">kit</span></h2>
+        <p>What I reach for.</p>
+      </div>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="chips"><span>TypeScript</span><span>JavaScript</span><span>Python</span><span>C++</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Frameworks</h4>
+          <div class="chips"><span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>FastAPI</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Cloud &amp; Data</h4>
+          <div class="chips"><span>AWS</span><span>MongoDB</span><span>Vercel</span><span>Render</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>AI &amp; APIs</h4>
+          <div class="chips"><span>LLM Integration</span><span>Ollama</span><span>Groq</span><span>WhatsApp Cloud API</span><span>REST</span></div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="reveal">
-      <h2><span class="num">05</span> Contact</h2>
-      <p class="contact-lead">Want to work together or just say hi? My inbox is always open.</p>
-      <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:tanishagarg1208@gmail.com">Email Me</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/tanisha-garg-a2b32b281/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn btn-ghost" href="https://github.com/tanishagargcoder" target="_blank" rel="noopener">GitHub ↗</a>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="reveal contact">
+      <p class="overline">// Open to internships &amp; collabs</p>
+      <h2 class="contact-big">Let's build<br /><span class="outline">something</span> ✦</h2>
+      <div class="hero-cta center">
+        <a class="btn-solid" href="mailto:tanishagarg1208@gmail.com">tanishagarg1208@gmail.com</a>
+        <a class="btn-line" href="https://www.linkedin.com/in/tanisha-garg-a2b32b281/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn-line" href="https://github.com/tanishagargcoder" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Tanisha Garg · Built with ♥ and lots of chai</p>
+    <p>© 2026 Tanisha Garg — designed &amp; built with lots of chai ☕</p>
   </footer>
 
   <script>
     document.body.classList.add('js');
+
+    // reveal on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    // typed roles
+    const roles = ['AI-powered tools', 'DevOps dashboards', 'WhatsApp bots', 'hackathon-winning ideas', 'clean web apps'];
+    const typedEl = document.getElementById('typed');
+    let ri = 0, ci = 0, deleting = false;
+    (function tick() {
+      const word = roles[ri];
+      typedEl.textContent = word.slice(0, ci);
+      if (!deleting && ci < word.length) { ci++; setTimeout(tick, 55); }
+      else if (!deleting) { deleting = true; setTimeout(tick, 1600); }
+      else if (ci > 0) { ci--; setTimeout(tick, 28); }
+      else { deleting = false; ri = (ri + 1) % roles.length; setTimeout(tick, 250); }
+    })();
   </script>
 </body>
 </html>

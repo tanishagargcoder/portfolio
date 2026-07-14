@@ -435,8 +435,7 @@ section { padding: 96px 0; }
   padding: 7px 14px;
   border-radius: 999px;
 }
-.highlights span:first-child,
-.highlights span:nth-child(2) { border-color: rgba(201, 242, 75, 0.45); color: var(--lime); }
+.highlights span:nth-child(-n+3) { border-color: rgba(201, 242, 75, 0.45); color: var(--lime); }
 
 .timeline { position: relative; padding-left: 26px; }
 .timeline::before {

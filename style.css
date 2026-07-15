@@ -242,7 +242,7 @@ h1 {
 
 /* ---------- sections ---------- */
 main { max-width: 1120px; margin: auto; padding: 0 28px; }
-section { padding: 96px 0; }
+section { padding: 96px 0; scroll-margin-top: 70px; }
 
 .sec-head { margin-bottom: 54px; }
 .sec-head h2, .exp-side h2 {
@@ -511,7 +511,23 @@ footer {
   padding: 30px 20px;
   color: var(--muted);
   font-size: 0.85rem;
+  position: relative;
 }
+.to-top {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--lime);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  border-radius: 999px;
+  transition: border-color 0.2s;
+}
+.to-top:hover { border-color: var(--lime); }
 
 /* ---------- reveal (hidden only once JS confirms it can reveal) ---------- */
 body.js .reveal {
@@ -534,10 +550,31 @@ body.js .reveal.visible { opacity: 1; transform: none; }
 }
 @media (max-width: 600px) {
   .nav-links { display: none; }
-  header { padding: 60px 22px 30px; }
+  .nav-inner { padding: 14px 20px; }
+  header { padding: 56px 22px 30px; }
   main { padding: 0 22px; }
   section { padding: 64px 0; }
-  .chip-1 { left: -12px; }
-  .chip-2 { right: -8px; }
+
+  /* photo centered, badges kept inside the screen */
+  .hero-photo { justify-self: center; margin: 0 auto; }
   .photo-frame { box-shadow: 8px 8px 0 var(--lime-dim); }
+  .float-chip { font-size: 0.72rem; padding: 6px 12px; }
+  .chip-1 { top: 14px; left: -8px; }
+  .chip-2 { bottom: 20px; right: -8px; }
+
+  .hero-cta .btn-solid, .hero-cta .btn-line { padding: 12px 20px; font-size: 0.9rem; }
+
+  /* browser mockups + feature rows breathe */
+  .shot-body { min-height: 200px; padding: 22px; }
+  .shot-word { font-size: 1.8rem; }
+  .feature { padding: 34px 0; }
+  .feature-info h3 { font-size: 1.4rem; }
+
+  /* timeline: let the date drop below the title instead of squeezing */
+  .titem-head { flex-wrap: wrap; gap: 4px 16px; }
+  .titem-head h3 { flex: 1 1 100%; }
+
+  .contact-big { letter-spacing: -0.5px; }
+  .to-top { position: static; display: inline-block; margin-top: 14px; transform: none; }
+  footer { display: flex; flex-direction: column; align-items: center; gap: 0; }
 }

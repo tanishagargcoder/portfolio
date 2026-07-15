@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=6" />
+  <link rel="stylesheet" href="style.css?v=7" />
 </head>
 <body>
 
@@ -88,8 +88,18 @@
         <a class="shot shot-cloudpilot" href="https://cloudpilot-ai-three.vercel.app" target="_blank" rel="noopener" aria-label="Open CloudPilot AI">
           <div class="shot-bar"><i></i><i></i><i></i><em>cloudpilot-ai-three.vercel.app</em></div>
           <div class="shot-body">
-            <div class="shot-word">CloudPilot<b>AI</b></div>
-            <div class="shot-caption">AI DevOps dashboard</div>
+            <div class="cp-ui">
+              <div class="cp-stats">
+                <div><b>0.2%</b><span>CPU</span></div>
+                <div><b>0</b><span>Incidents</span></div>
+                <div><b class="cp-ok">100%</b><span>Uptime</span></div>
+                <div><b>4</b><span>AI Agents</span></div>
+              </div>
+              <div class="cp-chart">
+                <i style="--h:30%"></i><i style="--h:55%"></i><i style="--h:40%"></i><i style="--h:70%"></i><i style="--h:48%"></i><i style="--h:82%"></i><i style="--h:60%"></i><i style="--h:38%"></i><i style="--h:66%"></i><i style="--h:52%"></i><i style="--h:74%"></i><i style="--h:45%"></i>
+              </div>
+              <div class="cp-term">▸ anomaly_detector → rca_agent → fix_agent <b>✓ resolved</b></div>
+            </div>
           </div>
         </a>
         <div class="feature-info">
@@ -108,8 +118,14 @@
         <a class="shot shot-tasa" href="https://tasa-viw2.vercel.app" target="_blank" rel="noopener" aria-label="Open TASA">
           <div class="shot-bar"><i></i><i></i><i></i><em>tasa-viw2.vercel.app</em></div>
           <div class="shot-body">
-            <div class="shot-word">TASA</div>
-            <div class="shot-caption">Own your day</div>
+            <div class="tasa-ui">
+              <div class="tasa-head"><span>Today</span><em>2 / 4 done</em></div>
+              <div class="tasa-task done"><i>✓</i>Ship portfolio update</div>
+              <div class="tasa-task done"><i>✓</i>DSA — 3 problems</div>
+              <div class="tasa-task"><i></i>Review GSSoC PRs</div>
+              <div class="tasa-task"><i></i>Prep for standup</div>
+              <div class="tasa-progress"><b style="width:50%"></b></div>
+            </div>
           </div>
         </a>
         <div class="feature-info">

@@ -370,6 +370,55 @@ section { padding: 96px 0; scroll-margin-top: 70px; }
 }
 .cp-term b { color: var(--lime); font-weight: 600; }
 
+/* Saakhi roommate matches */
+.shot-saakhi .shot-body {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(216, 132, 226, 0.18), transparent 55%),
+    radial-gradient(circle at 85% 80%, rgba(139, 92, 246, 0.16), transparent 50%),
+    #120a14;
+}
+.sk-ui { width: 100%; max-width: 360px; display: flex; flex-direction: column; gap: 9px; }
+.sk-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+.sk-head span { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); }
+.sk-head em { font-style: normal; font-size: 0.7rem; color: #d884e2; font-weight: 600; }
+.sk-card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  background: rgba(22, 12, 24, 0.85);
+  border: 1px solid rgba(216, 132, 226, 0.25);
+  border-radius: 12px;
+  padding: 9px 12px;
+}
+.sk-av {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d884e2, #8b5cf6);
+  color: #14061a;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.sk-info { flex: 1; min-width: 0; }
+.sk-info strong { display: block; color: var(--text); font-size: 0.82rem; }
+.sk-info span { color: var(--muted); font-size: 0.68rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+.sk-match {
+  font-style: normal;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: #d884e2;
+  border: 1px solid rgba(216, 132, 226, 0.4);
+  border-radius: 999px;
+  padding: 3px 9px;
+  flex-shrink: 0;
+}
+
 /* TASA task list */
 .tasa-ui { width: 100%; max-width: 340px; display: flex; flex-direction: column; gap: 8px; }
 .tasa-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
@@ -556,6 +605,43 @@ section { padding: 96px 0; scroll-margin-top: 70px; }
 .tdate { color: var(--lime); font-size: 0.78rem; font-weight: 600; white-space: nowrap; }
 .torg { color: var(--muted); font-size: 0.86rem; margin-top: 3px; }
 
+/* ---------- certifications ---------- */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+.cert {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  text-decoration: none;
+  transition: transform 0.25s, border-color 0.25s;
+}
+.cert:hover { transform: translateY(-4px); border-color: rgba(201, 242, 75, 0.5); }
+.cert-ico {
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cert div { flex: 1; min-width: 0; }
+.cert h4 { color: var(--text); font-size: 1rem; font-weight: 700; }
+.cert p { color: var(--muted); font-size: 0.82rem; margin-top: 2px; }
+.cert-arrow { color: var(--muted); font-size: 1.05rem; transition: color 0.2s, transform 0.2s; }
+.cert:hover .cert-arrow { color: var(--lime); transform: translate(3px, -3px); }
+.cert-more { border-style: dashed; }
+
 /* ---------- skills ---------- */
 .skill-groups {
   display: grid;
@@ -656,6 +742,9 @@ body.js .reveal.visible { opacity: 1; transform: none; }
   /* timeline: let the date drop below the title instead of squeezing */
   .titem-head { flex-wrap: wrap; gap: 4px 16px; }
   .titem-head h3 { flex: 1 1 100%; }
+
+  /* long single-word headings (e.g. Certifications) must fit the screen */
+  .sec-head h2, .exp-side h2 { font-size: clamp(1.8rem, 8.4vw, 2.6rem); overflow-wrap: anywhere; }
 
   .contact-big { letter-spacing: -0.5px; }
   .to-top { position: static; display: inline-block; margin-top: 14px; transform: none; }
